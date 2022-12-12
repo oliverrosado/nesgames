@@ -1,0 +1,420 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color: #181818;
+}
+
+h1 {
+
+	font-size: 60px;
+	color: white;
+	font-family: lores-12,sans-serif;
+ 	font-weight: 700;
+ 	font-style: normal;
+
+}
+
+h2 {
+
+	font-size: 20px;
+	color: white;
+	font-family: lores-12,sans-serif;
+ 	font-weight: 500;
+ 	font-style: normal;
+
+}
+
+h3 {
+
+	font-size: 30px;
+	color: white;
+	font-family: lores-12,sans-serif;
+ 	font-weight: 700;
+ 	font-style: normal;
+	line-height: 40px;
+
+}
+
+h4 {
+
+	font-size: 16px;
+	color: white;
+	font-family: lores-12,sans-serif;
+ 	font-weight: 500;
+ 	font-style: normal;
+
+}
+
+.intro {
+
+	position: relative;
+	bottom: 50%;
+	left: 50%;
+	width: 60%;
+	height: 400px;
+	transform: translate(-50%, -50%);
+
+}
+
+@keyframes fadeOut {
+	
+	0% {opacity: 100%;}
+	100% {opacity: 0%;}
+
+}
+
+.titleDraw {
+
+	position: fixed;
+	left: -83px;
+	bottom: 150px;
+	width: 861px;
+	animation-name: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeIn {
+	
+	0%		{opacity: 0%;}
+	100%	{opacity: 100%;}
+
+}
+
+.title {
+
+	position: relative;
+	width: auto;
+	left: 50%;
+	transform: translate(-50%, -0%);
+	opacity: 0%;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+
+}
+
+.desc {
+
+	position: relative;
+	left: 4px;
+	top: 10px;
+	width: 550px;
+	opacity: 0%;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+
+}
+
+#history {
+
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-delay: 1.8s;
+	animation-fill-mode: forwards;
+	opacity: 0%;
+	position: fixed;
+	top: 38.5%;
+	left: 69%;
+	width: 305px;
+	transform: translate(0%, -0%);
+  
+}
+
+.resetButton {
+
+	position: fixed;
+	top: -10%;
+	transform: translate(0%, 0%);
+	animation-name: controllerSlide;
+	animation-duration: 2.5s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+
+
+}
+
+@keyframes controllerSlide {
+	
+	from{
+		opacity: 100%;
+		transform: translateY(0%);
+	}
+	to {
+		opacity: 100%;
+		transform: translateY(275%);
+	}
+}
+
+.dpad {
+
+	animation-name: controllerSlide;
+	animation-duration: 2s;
+	animation-delay: 1.3s;
+	animation-fill-mode: forwards;
+	position: fixed;
+	top: 50%;
+	left: 35%;
+	opacity: 0%;
+	  
+}
+
+.aButton {
+
+	animation-name: controllerSlide;
+	animation-duration: 2.2s;
+	animation-delay: 1.7s;
+	animation-fill-mode: forwards;
+	position: fixed;
+	top: 66.5%;
+	left: 60%;
+	opacity: 0%;
+	  
+}
+
+.bButton {
+
+	animation-name: controllerSlide;
+	animation-duration: 2.3s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	position: fixed;
+	top: 66.5%;
+	left: 54%;
+	opacity: 0%;
+	  
+}
+
+.game {
+
+	position: fixed;
+	height: 800px;
+	width: 1000px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+
+}
+
+@keyframes videoSlide {
+	
+	from{
+		transform: translateX(-100%) translateY(-50%);
+	}
+	to {
+		transform: translateX(0%) translateY(-50%);
+	}
+}
+
+.video {
+
+	animation-name: videoSlide;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	position: fixed;
+  	top: 50%;
+  	left: 0%;
+  	transform: translate(0%, -50%);
+
+}
+
+@keyframes bannerSlide {
+	
+	from{
+		transform: translateX(100%) translateY(0%);
+	}
+	to {
+		transform: translateX(0%) translateY(0%);
+	}
+}
+
+.banner {
+
+	animation-name: bannerSlide;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	position: fixed;
+	top: 21%;
+	left: 65%;
+	transform: translate(0%, 0%);
+  
+  }
+
+@keyframes selectFloat {
+	
+	0% {transform: translateY(0px);}
+	50% {transform: translateY(10px);}
+	100% {transform: translateY(0px);}
+
+
+}
+
+.select {
+
+	position: relative;
+	text-align: center;
+	left: 0%;
+	bottom: 40%;
+	transform: translate(-50%, -50%);
+	animation-name: selectFloat;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+
+
+
+}
+
+@keyframes panelSlide {
+	
+	from{
+		transform: translateY(-100%) translateX(30%);
+	}
+	to {
+		transform: translateY(0%) translateX(25%);
+	}
+}
+
+.screen {
+
+	overflow: hidden;
+	width: 20%;
+	height: 100%;
+
+}
+
+.panels {
+
+	animation-name: panelSlide;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+
+}
+
+.panelsStatic {
+
+	position: relative;
+	left: 25%;
+	transform: translate(0%, 0%);
+
+
+}
+
+@keyframes gameSlide {
+	
+	from{
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0%);
+	}
+}
+
+.smbcart {
+
+	animation-name: gameSlide;
+	animation-duration: 1.8s;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	position: fixed;
+	left: 40%;
+	bottom: -20%;
+	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+	transition: all .3s ease;
+
+}
+
+.smbcart:hover {
+
+	transform: translateY(-200px) scale(1.1);
+
+}
+
+.smb3cart {
+
+	animation-name: gameSlide;
+	animation-duration: 2.2s;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	position: fixed;
+	left: 50%;
+	bottom: -20%;
+	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+	transition: all .3s ease;
+
+}
+
+.smb3cart:hover {
+
+	transform: translateY(-200px) scale(1.1);
+
+}
+
+.ihcart {
+
+	animation-name: gameSlide;
+	animation-duration: 1.4s;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	position: fixed;
+	left: 30%;
+	bottom: -20%;
+	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+	transition: all .3s ease;
+
+}
+
+.ihcart:hover {
+
+	transform: translateY(-200px) scale(1.1);
+
+}
+
+.tsbcart {
+
+	animation-name: gameSlide;
+	animation-duration: 2.6s;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	position: fixed;
+	left: 60%;
+	bottom: -20%;
+	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+	transition: all .3s ease;
+
+}
+
+.tsbcart:hover {
+
+	transform: translateY(-200px) scale(1.1);
+
+}
+
+.btcart {
+
+	animation-name: gameSlide;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	position: fixed;
+	left: 20%;
+	bottom: -20%;
+	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+	transition: all .3s ease;
+
+}
+
+.btcart:hover {
+
+	transform: translateY(-200px) scale(1.1);
+
+}
